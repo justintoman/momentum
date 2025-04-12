@@ -1,0 +1,15 @@
+table:
+  name: workout_templates
+  schema: public
+object_relationships:
+  - name: plan
+    using:
+      foreign_key_constraint_on: plan_id
+array_relationships:
+  - name: exercise_templates
+    using:
+      foreign_key_constraint_on:
+        column: workout_template_id
+        table:
+          name: exercise_templates
+          schema: public

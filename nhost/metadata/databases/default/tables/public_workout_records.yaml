@@ -1,0 +1,11 @@
+table:
+  name: workout_records
+  schema: public
+array_relationships:
+  - name: exercise_records
+    using:
+      foreign_key_constraint_on:
+        column: workout_record_id
+        table:
+          name: exercise_records
+          schema: public

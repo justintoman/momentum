@@ -1,0 +1,7 @@
+table:
+  name: set_templates
+  schema: public
+object_relationships:
+  - name: exercise
+    using:
+      foreign_key_constraint_on: exercise_id

@@ -1,0 +1,7 @@
+table:
+  name: set_records
+  schema: public
+object_relationships:
+  - name: exercise_record
+    using:
+      foreign_key_constraint_on: exercise_record_id
